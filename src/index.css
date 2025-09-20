@@ -10,60 +10,60 @@ All colors MUST be HSL.
   :root {
     /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    --foreground: 0 0% 10%;
 
     /* Card components */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 0 0% 10%;
 
     /* Popover components */
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Primary - Steel Blue */
-    --primary: 215 25% 25%;
-    --primary-foreground: 0 0% 98%;
-    --primary-hover: 215 25% 20%;
+    /* Primary - Maple Red */
+    --primary: 351 85% 43%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 351 85% 38%;
 
-    /* Secondary - Light Steel */
-    --secondary: 215 15% 92%;
-    --secondary-foreground: 215 25% 25%;
+    /* Secondary - Dark Steel Gray */
+    --secondary: 213 12% 18%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted tones */
-    --muted: 215 10% 95%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted tones - Light Gray */
+    --muted: 214 13% 97%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Accent - Canadian Red */
-    --accent: 0 75% 50%;
-    --accent-foreground: 0 0% 98%;
-    --accent-hover: 0 75% 45%;
+    /* Accent - Industrial Blue */
+    --accent: 212 55% 41%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 212 55% 36%;
 
-    /* Industrial Orange for CTAs */
-    --industrial: 25 95% 55%;
-    --industrial-foreground: 0 0% 98%;
-    --industrial-hover: 25 95% 50%;
+    /* Industrial - Keep Maple Red for CTAs */
+    --industrial: 351 85% 43%;
+    --industrial-foreground: 0 0% 100%;
+    --industrial-hover: 351 85% 38%;
 
     /* Success - Green */
     --success: 120 50% 45%;
-    --success-foreground: 0 0% 98%;
+    --success-foreground: 0 0% 100%;
 
     /* Destructive */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    /* Borders and inputs */
-    --border: 215 15% 85%;
-    --input: 215 15% 85%;
-    --ring: 215 25% 25%;
+    /* Borders and inputs - Light Gray */
+    --border: 214 13% 90%;
+    --input: 214 13% 90%;
+    --ring: 351 85% 43%;
 
-    /* Custom industrial gradients */
-    --gradient-steel: linear-gradient(135deg, hsl(215 25% 25%), hsl(215 25% 35%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 15% / 0.9), hsl(215 25% 25% / 0.8));
-    --gradient-accent: linear-gradient(135deg, hsl(0 75% 50%), hsl(25 95% 55%));
+    /* Custom Maple gradients */
+    --gradient-steel: linear-gradient(135deg, hsl(213 12% 18%), hsl(213 12% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 12% 18% / 0.95), hsl(351 85% 43% / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(351 85% 43%), hsl(212 55% 41%));
 
     /* Shadows */
-    --shadow-card: 0 4px 6px -1px hsl(215 25% 25% / 0.1), 0 2px 4px -2px hsl(215 25% 25% / 0.1);
-    --shadow-hero: 0 25px 50px -12px hsl(215 25% 15% / 0.4);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-hero: 0 25px 50px -12px hsl(213 12% 18% / 0.4);
 
     --radius: 0.5rem;
 
@@ -85,58 +85,58 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Base colors - Dark industrial theme */
-    --background: 215 25% 8%;
+    /* Base colors - Dark Maple theme */
+    --background: 213 12% 8%;
     --foreground: 0 0% 95%;
 
     /* Card components */
-    --card: 215 25% 12%;
+    --card: 213 12% 12%;
     --card-foreground: 0 0% 95%;
 
     /* Popover components */
-    --popover: 215 25% 12%;
+    --popover: 213 12% 12%;
     --popover-foreground: 0 0% 95%;
 
-    /* Primary - Light Steel Blue */
-    --primary: 215 25% 75%;
-    --primary-foreground: 215 25% 15%;
-    --primary-hover: 215 25% 80%;
+    /* Primary - Maple Red (slightly lighter for dark mode) */
+    --primary: 351 80% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 351 80% 60%;
 
     /* Secondary - Dark Steel */
-    --secondary: 215 15% 15%;
+    --secondary: 213 12% 15%;
     --secondary-foreground: 0 0% 95%;
 
     /* Muted tones */
-    --muted: 215 15% 18%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 213 12% 18%;
+    --muted-foreground: 0 0% 65%;
 
-    /* Accent - Canadian Red (slightly muted) */
-    --accent: 0 65% 55%;
-    --accent-foreground: 0 0% 98%;
-    --accent-hover: 0 65% 60%;
+    /* Accent - Industrial Blue (lighter for dark mode) */
+    --accent: 212 50% 55%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 212 50% 60%;
 
-    /* Industrial Orange */
-    --industrial: 25 85% 60%;
-    --industrial-foreground: 0 0% 98%;
-    --industrial-hover: 25 85% 65%;
+    /* Industrial - Maple Red */
+    --industrial: 351 80% 55%;
+    --industrial-foreground: 0 0% 100%;
+    --industrial-hover: 351 80% 60%;
 
     /* Success */
     --success: 120 40% 50%;
-    --success-foreground: 0 0% 98%;
+    --success-foreground: 0 0% 100%;
 
     /* Destructive */
     --destructive: 0 75% 55%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Borders and inputs */
-    --border: 215 15% 20%;
-    --input: 215 15% 20%;
-    --ring: 215 25% 75%;
+    --border: 213 12% 20%;
+    --input: 213 12% 20%;
+    --ring: 351 80% 55%;
 
     /* Dark gradients */
-    --gradient-steel: linear-gradient(135deg, hsl(215 25% 12%), hsl(215 25% 20%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 8% / 0.95), hsl(215 25% 15% / 0.9));
-    --gradient-accent: linear-gradient(135deg, hsl(0 65% 55%), hsl(25 85% 60%));
+    --gradient-steel: linear-gradient(135deg, hsl(213 12% 12%), hsl(213 12% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 12% 8% / 0.95), hsl(351 80% 55% / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(351 80% 55%), hsl(212 50% 55%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

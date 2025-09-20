@@ -94,12 +94,12 @@ const Contact = () => {
   return (
     <div className="min-h-screen py-16">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-steel">
+      <section className="py-12 sm:py-16 bg-gradient-steel">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Request Your Quote
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto px-4">
             Ready to reduce your fabrication costs by 20-30%? Get a detailed quote 
             for your project and discover how we can help you achieve your goals.
           </p>
@@ -107,24 +107,24 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-primary">
+                <CardTitle className="text-xl sm:text-2xl font-bold text-primary">
                   Project Inquiry Form
                 </CardTitle>
-                <p className="text-muted-foreground">
+                <p className="text-sm sm:text-base text-muted-foreground">
                   Tell us about your project and we'll provide a detailed quote within 24 hours.
                 </p>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     <div>
-                      <Label htmlFor="name">Full Name *</Label>
+                      <Label htmlFor="name" className="text-sm sm:text-base">Full Name *</Label>
                       <Input
                         id="name"
                         name="name"
@@ -132,10 +132,11 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         placeholder="Your full name"
+                        className="mt-1"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="company">Company *</Label>
+                      <Label htmlFor="company" className="text-sm sm:text-base">Company *</Label>
                       <Input
                         id="company"
                         name="company"
@@ -143,6 +144,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         placeholder="Company name"
+                        className="mt-1"
                       />
                     </div>
                   </div>

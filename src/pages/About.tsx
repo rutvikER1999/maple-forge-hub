@@ -29,12 +29,12 @@ const About = () => {
   return (
     <div className="min-h-screen py-16">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-steel">
+      <section className="py-12 sm:py-16 bg-gradient-steel">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             About MapleFab Solutions
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto px-4">
             Ontario-based supplier bridging Canadian assurance with South Asian manufacturing excellence, 
             helping companies achieve 20-30% cost savings while maintaining the highest quality standards.
           </p>
@@ -42,32 +42,32 @@ const About = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 sm:mb-16">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 sm:mb-6">
                 Our Story
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6">
                 MapleFab Solutions was founded on the principle that Canadian companies shouldn't have to 
                 choose between quality and cost-effectiveness. We recognized that many Ontario businesses 
                 were struggling with high local fabrication costs while being hesitant to work directly 
                 with overseas manufacturers due to quality concerns and communication barriers.
               </p>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6">
                 Our solution bridges this gap by providing Canadian oversight and quality assurance while 
                 leveraging established, trusted manufacturing partnerships in South Asia. This approach 
                 delivers the cost savings of global manufacturing with the reliability and standards 
                 Canadian businesses expect.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 Today, we help Ontario companies reduce fabrication costs by 20-30% while maintaining 
                 complete project transparency, comprehensive documentation, and adherence to Canadian 
                 industrial standards.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <img 
                 src={teamImage} 
                 alt="Professional engineering team at work" 
@@ -112,30 +112,30 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 sm:mb-4">
               Our Values
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
               The principles that guide everything we do, from project management to quality assurance.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {values.map((value, index) => (
               <Card key={index} className="text-center shadow-card">
                 <CardHeader>
-                  <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center">
-                      <value.icon className="h-8 w-8 text-white" />
+                  <div className="flex justify-center mb-3 sm:mb-4">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-accent rounded-full flex items-center justify-center">
+                      <value.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                     </div>
                   </div>
-                  <CardTitle className="text-xl font-bold text-primary">{value.title}</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-bold text-primary">{value.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{value.description}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
